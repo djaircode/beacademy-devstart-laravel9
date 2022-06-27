@@ -9,11 +9,18 @@ class UserController extends Controller
     public function index()
     {
         $users = [
-            'nome' => 'José Lira',
-            'nome' => 'Jão Lira'
+            'José Lira',
+            'Jão Lira'
         ];
-
+    
         dd($users);
+    }
+
+    public function show($id)
+    {
+        $idUser = $id;
+
+        dd('Id do usuário é '.$idUser);
     }
 }
 
